@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Fale Conosco | Lexington & Associates</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cbab6c",
+                        "background-light": "#fcfcfc",
+                        "background-dark": "#000000",
+                        "charcoal": "#1A1A1A",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .form-input:focus {
+            border-color: #cbab6c !important;
+            ring: 0 !important;
+            outline: none !important;
+        }
+        .map-grayscale {
+            filter: grayscale(100%) contrast(1.1) brightness(0.9);
+        }
+        .thin-border {
+            border-width: 0.5px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-charcoal transition-colors duration-300">
+<div class="layout-container flex h-full min-h-screen flex-col">
+    <header class="flex items-center justify-between border-b border-solid border-gray-100 dark:border-neutral-800 px-8 lg:px-20 py-6 bg-white dark:bg-black sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <div class="text-primary">
+                <svg class="size-6" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <h2 class="text-charcoal dark:text-white text-xl font-bold tracking-tighter uppercase">Lexington & Associates</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-charcoal dark:text-gray-300 text-xs font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Início</a>
+            <a class="text-charcoal dark:text-gray-300 text-xs font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="sobre.html">Sobre Nós</a>
+            <a class="text-charcoal dark:text-gray-300 text-xs font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="servicos.html">Áreas de Atuação</a>
+            <a class="text-charcoal dark:text-gray-300 text-xs font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="#">Blog</a>
+            <a class="text-charcoal dark:text-gray-300 text-xs font-semibold uppercase tracking-widest hover:text-primary transition-colors" href="contato.html">Contato</a>
+        </nav>
+        <button class="bg-primary text-white text-[10px] font-bold uppercase tracking-[0.2em] px-6 py-3 hover:bg-opacity-90 transition-all">
+            Consulta
+        </button>
+    </header>
+    <main class="flex-1">
+        <div class="flex flex-col lg:flex-row min-h-[calc(100vh-88px)]">
+            <div class="w-full lg:w-1/2 p-8 lg:p-24 flex flex-col justify-center bg-white dark:bg-neutral-950">
+                <div class="max-w-md mx-auto w-full">
+                    <span class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Atendimento</span>
+                    <h1 class="font-serif text-4xl lg:text-5xl text-charcoal dark:text-white mb-6 leading-tight">Entre em Contato</h1>
+                    <p class="text-gray-500 dark:text-gray-400 font-light leading-relaxed mb-12">
+                        Nossa equipe de especialistas está pronta para auxiliá-lo com consultoria jurídica sofisticada. Preencha o formulário abaixo e responderemos em até 24 horas úteis.
+                    </p>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col space-y-2">
+                                <label class="text-[10px] uppercase tracking-widest font-bold text-charcoal dark:text-gray-300">Nome Completo</label>
+                                <input class="form-input border-b border-t-0 border-x-0 border-gray-200 dark:border-neutral-800 bg-transparent px-0 py-3 text-sm focus:ring-0 focus:border-primary transition-colors placeholder:text-gray-300" placeholder="João Silva" type="text"/>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <label class="text-[10px] uppercase tracking-widest font-bold text-charcoal dark:text-gray-300">E-mail</label>
+                                <input class="form-input border-b border-t-0 border-x-0 border-gray-200 dark:border-neutral-800 bg-transparent px-0 py-3 text-sm focus:ring-0 focus:border-primary transition-colors placeholder:text-gray-300" placeholder="email@empresa.com" type="email"/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest font-bold text-charcoal dark:text-gray-300">Área de Interesse</label>
+                            <select class="form-input border-b border-t-0 border-x-0 border-gray-200 dark:border-neutral-800 bg-transparent px-0 py-3 text-sm focus:ring-0 focus:border-primary transition-colors appearance-none">
+                                <option>Selecione uma área de atuação</option>
+                                <option>Direito Empresarial</option>
+                                <option>Propriedade Intelectual</option>
+                                <option>Contencioso Imobiliário</option>
+                                <option>Tributário e Sucessões</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col space-y-2 pt-4">
+                            <label class="text-[10px] uppercase tracking-widest font-bold text-charcoal dark:text-gray-300">Mensagem</label>
+                            <textarea class="form-input border-b border-t-0 border-x-0 border-gray-200 dark:border-neutral-800 bg-transparent px-0 py-3 text-sm focus:ring-0 focus:border-primary transition-colors resize-none placeholder:text-gray-300" placeholder="Descreva brevemente sua necessidade jurídica..." rows="4"></textarea>
+                        </div>
+                        <button class="w-full lg:w-max bg-charcoal dark:bg-primary text-white px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-primary dark:hover:bg-opacity-90 transition-all mt-8" type="submit">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 bg-background-light dark:bg-neutral-900 border-l border-gray-100 dark:border-neutral-800">
+                <div class="h-1/2 lg:h-[45%] p-8 lg:p-24 flex flex-col justify-center">
+                    <div class="max-w-md mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h4 class="font-serif text-xl mb-4 dark:text-white">Nosso Escritório</h4>
+                            <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400 font-light">
+                                <div class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                                    <p>Av. Paulista, 1578<br/>São Paulo, SP 01310-200</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-lg">call</span>
+                                    <p>+55 (11) 3255-0198</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                                    <p>contato@lexington.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-xl mb-4 dark:text-white">Horário de Atendimento</h4>
+                            <div class="space-y-2 text-[11px] uppercase tracking-tighter text-gray-500 dark:text-gray-400">
+                                <div class="flex justify-between border-b border-gray-100 dark:border-neutral-800 pb-1">
+                                    <span>Seg — Sex</span>
+                                    <span class="font-bold text-charcoal dark:text-gray-200">08:00 — 19:00</span>
+                                </div>
+                                <div class="flex justify-between border-b border-gray-100 dark:border-neutral-800 pb-1">
+                                    <span>Sábado</span>
+                                    <span class="font-bold text-charcoal dark:text-gray-200">10:00 — 14:00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Domingo</span>
+                                    <span class="text-primary italic">Fechado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-1/2 lg:h-[55%] relative overflow-hidden bg-gray-200 grayscale contrast-125">
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+                        <div class="bg-white dark:bg-black p-4 shadow-xl border border-primary/20">
+                            <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+                        </div>
+                    </div>
+                    <img class="w-full h-full object-cover map-grayscale opacity-80" data-alt="Grayscale metropolitan city map with clean minimalist grid" data-location="São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYalA5vs9iPZLdNqEYj2VelQ1s94RDkY8qmfPuSMGe7bjK1qTZPpwUd24yoXWGbiHyW2XRTOpDMoqkwVAHD1ud8ghI6UckS7DsGGRF1ZtOKEjW6bfy9NYxfqbj84kAfBacAjrj_YsIXszbVSFtm0OmHrlV5wzXZgaylKoYxMeeUwSYAw86IAUjLzbsss3OeWu9vYxMFOG898lu6Xsdm4YuUb57CSbZQzM9ZRvrbxEiwRaTcnYuKTlZhyp-h-DSrt_hc1MH0txKmpU"/>
+                    <div class="absolute bottom-6 right-6 bg-white/80 dark:bg-black/80 backdrop-blur-sm px-4 py-2 text-[10px] font-bold tracking-widest uppercase border border-gray-200 dark:border-neutral-800">
+                        Ver no Google Maps
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white dark:bg-black border-t border-gray-100 dark:border-neutral-900 px-8 py-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-[10px] text-gray-400 uppercase tracking-[0.2em]">© 2024 Lexington & Associates. Todos os direitos reservados.</p>
+            <div class="flex gap-8 text-[10px] text-gray-400 uppercase tracking-[0.2em]">
+                <a class="hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+                <a class="hover:text-primary transition-colors" href="#">Aviso Legal</a>
+                <a class="hover:text-primary transition-colors" href="#">Publicidade Legal</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

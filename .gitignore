@@ -1,0 +1,23 @@
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Archivos del IDE (IntelliJ IDEA) ---
+# Carpeta de configuración del editor (no se debe subir)
+.idea/
+# Archivos de módulos del proyecto
+*.iml
+# Archivos de workspace y tareas
+*.iws
+*.ipr
+out/
+
+# --- Archivos de Logs y Temporales ---
+*.log
+*.tmp
+
+# --- Carpetas de dependencias (por si usas JS a futuro) ---
+node_modules/
+dist/

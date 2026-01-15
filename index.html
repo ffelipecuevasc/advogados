@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Advocacia | Lexington & Associates</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#cbab6c",
+                        "background-light": "#fcfcfc",
+                        "background-dark": "#000000",
+                        "stone-950": "#0c0a09",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #fcfcfc;
+        }
+        h1, h2, .serif-text {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-stone-950 dark:text-white antialiased">
+<header class="fixed top-0 w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-b border-primary/20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="text-primary">
+                <svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <h2 class="text-stone-950 dark:text-white text-xl font-bold tracking-tight uppercase">Lexington <span class="font-light text-primary">&</span> Associates</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors" href="index.html">Início</a>
+            <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors" href="about_us.html">Sobre Nós</a>
+            <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors" href="services.html">Áreas de Atuação</a>
+            <a class="text-xs uppercase tracking-[0.2em] font-medium hover:text-primary transition-colors" href="contact.html">Contato</a>
+        </nav>
+        <a href="contact.html" class="bg-primary text-stone-950 px-6 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-stone-950 hover:text-white transition-all duration-300">
+            Consulta Gratuita
+        </a>
+    </div>
+</header>
+<main class="pt-20">
+    <section class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center grayscale" data-alt="Dark desaturated modern law office interior with large windows" style='background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTRIMCSmFo_7V0d_E5GTVYpsH1Y79X3f60KCAUEdF5tPDJIJyOek01Qvx6c3Ash4vTRpnbkr5dQjqPPKdxI0mVufBvggunw_Wv-5il8sbGPgtrY3hPJLVkjsP-BMbjM_IS_YwCY8bhJG8pd7Q4CKkxOuGWYdIorVU3CXCI3aIpZz2LIZviKWJHotGDGenMLHBqwsmd-QFzwU4ltaewZWjgFsQsmI1kzkiCTnBjM5ksuTr8UxM436b03od6n4vXhvbwTZEbUK7LLdNK");'></div>
+        <div class="relative z-10 max-w-4xl px-6 text-center text-white">
+            <p class="text-primary uppercase tracking-[0.4em] text-sm mb-6">Fundado em 1984</p>
+            <h1 class="text-5xl md:text-7xl font-light mb-8 leading-tight italic">
+                Integridade em <span class="font-bold not-italic">Cada Detalhe.</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 text-stone-300 leading-relaxed">
+                Um legado de excelência e precisão em direito empresarial e litígio privado. Oferecemos clareza em cenários jurídicos complexos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-primary text-stone-950 px-10 py-4 font-bold uppercase tracking-widest text-sm transition-all hover:bg-white">
+                    Agendar Reunião
+                </a>
+                <a href="services.html" class="border border-white text-white px-10 py-4 font-bold uppercase tracking-widest text-sm transition-all hover:bg-white hover:text-stone-950">
+                    Ver Atuação
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <span class="material-symbols-outlined text-primary text-3xl">expand_more</span>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-stone-950 border-b border-stone-100 dark:border-stone-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+            <div class="inline-block h-px w-20 bg-primary mb-8"></div>
+            <h2 class="text-4xl md:text-5xl font-light text-stone-950 dark:text-white mb-6 italic">Nossa <span class="font-bold not-italic">Filosofia</span></h2>
+            <p class="max-w-3xl mx-auto text-stone-600 dark:text-stone-400 text-lg leading-relaxed mb-16">
+                Acreditamos que a consultoria jurídica deve ser tão sofisticada quanto os desafios que nossos clientes enfrentam. Nossa abordagem baseia-se em três pilares fundamentais.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-stone-100 dark:border-stone-800">
+                <div class="p-12 text-left border-stone-100 dark:border-stone-800 md:border-r">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="Lightbulb">lightbulb</span>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Clareza</h3>
+                    <p class="text-stone-500 dark:text-stone-400 leading-relaxed font-light">
+                        Simplificamos o complexo para fornecer caminhos jurídicos acionáveis. Removemos o ruído para encontrar a essência do seu caso.
+                    </p>
+                </div>
+                <div class="p-12 text-left border-stone-100 dark:border-stone-800 md:border-r">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="Compass">explore</span>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Precisão</h3>
+                    <p class="text-stone-500 dark:text-stone-400 leading-relaxed font-light">
+                        Cada detalhe é examinado para garantir o mais alto padrão de trabalho. No direito, o menor detalhe frequentemente determina o resultado.
+                    </p>
+                </div>
+                <div class="p-12 text-left">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="MedalMilitary">workspace_premium</span>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Excelência</h3>
+                    <p class="text-stone-500 dark:text-stone-400 leading-relaxed font-light">
+                        Uma busca incansável por resultados superiores. Não nos contentamos com o "satisfatório" quando o "excepcional" é alcançável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-5xl font-bold text-stone-950 dark:text-white mb-6">Áreas de Atuação</h2>
+                    <p class="text-stone-600 dark:text-stone-400 text-lg">Consultoria jurídica especializada em múltiplas disciplinas com compromisso de excelência.</p>
+                </div>
+                <a class="text-primary font-bold uppercase tracking-widest text-sm flex items-center gap-2 hover:translate-x-2 transition-transform" href="services.html">
+                    Explorar Todas as Áreas <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group border border-primary/30 p-10 hover:bg-stone-950 hover:border-stone-950 dark:hover:bg-white dark:hover:border-white transition-all duration-500">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-2xl" data-icon="Buildings">corporate_fare</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-white dark:group-hover:text-stone-950">Direito Empresarial</h4>
+                    <p class="text-stone-500 dark:text-stone-400 mb-8 group-hover:text-stone-300 dark:group-hover:text-stone-600">Consultoria estratégica para empresas globais e startups que buscam domínio de mercado.</p>
+                    <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="group border border-primary/30 p-10 hover:bg-stone-950 hover:border-stone-950 dark:hover:bg-white dark:hover:border-white transition-all duration-500">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-2xl" data-icon="Gavel">gavel</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-white dark:group-hover:text-stone-950">Propriedade Intelectual</h4>
+                    <p class="text-stone-500 dark:text-stone-400 mb-8 group-hover:text-stone-300 dark:group-hover:text-stone-600">Proteção abrangente para seus ativos intangíveis mais valiosos em uma economia globalizada.</p>
+                    <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="group border border-primary/30 p-10 hover:bg-stone-950 hover:border-stone-950 dark:hover:bg-white dark:hover:border-white transition-all duration-500">
+                    <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-2xl" data-icon="Shield">shield</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 group-hover:text-white dark:group-hover:text-stone-950">Contencioso Privado</h4>
+                    <p class="text-stone-500 dark:text-stone-400 mb-8 group-hover:text-stone-300 dark:group-hover:text-stone-600">Resolução de disputas de alto risco e advocacia sofisticada para clientes privados.</p>
+                    <div class="h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-stone-950 py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <img class="w-full h-[500px] object-cover grayscale border-l-4 border-primary" data-alt="Close up of classic law books in a mahogany library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE1t7fCsQeIPNg7FH-uburfm9aVyYA1DIMpXhuoIrGMJA1aQdmGqwZsyqlMSevOyO6lRqap6YUjYLnXiRiWiCPzMU3BYN7eF5TAr1RK6PiUedWlnQy1nok-GXWkdrKNY0EBYmftMELvT-MzC_5ZWc-s60X9AfeAiZPEJnuxQjsrgOzUnxyMUO5I72HvVFypNB_FmqipWkau5SWqPyKp8fbqLKb6E4bhQI2MLfUYyHUHVT4op0Ay2leq7b0ayaPVb5FCYGkgL857bCv"/>
+            </div>
+            <div class="flex-1 text-white">
+                <p class="text-primary uppercase tracking-[0.3em] text-xs mb-4">O Diferencial</p>
+                <h2 class="text-4xl font-light mb-8 italic">Perspectiva <span class="font-bold not-italic">Inigualável.</span></h2>
+                <div class="space-y-6 text-stone-400 font-light leading-relaxed">
+                    <p>Nossos advogados trazem uma perspectiva única para cada caso, combinando profundo conhecimento do setor com estratégias jurídicas inovadoras que antecipam desafios.</p>
+                    <p>Não apenas reagimos à lei; ajudamos a moldar os resultados que mais importam para o futuro de nossos clientes.</p>
+                </div>
+                <div class="mt-12 flex items-center gap-8">
+                    <div>
+                        <p class="text-primary text-4xl font-bold">35+</p>
+                        <p class="text-xs uppercase tracking-widest text-stone-500">Anos de Exp.</p>
+                    </div>
+                    <div class="w-px h-12 bg-stone-800"></div>
+                    <div>
+                        <p class="text-primary text-4xl font-bold">98%</p>
+                        <p class="text-xs uppercase tracking-widest text-stone-500">Casos de Sucesso</p>
+                    </div>
+                    <div class="w-px h-12 bg-stone-800"></div>
+                    <div>
+                        <p class="text-primary text-4xl font-bold">$2Bi+</p>
+                        <p class="text-xs uppercase tracking-widest text-stone-500">Recuperados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-stone-950">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4 uppercase tracking-tight">Solicite uma Consulta</h2>
+            <p class="text-stone-500 mb-12 italic">Profissional. Confidencial. Decisivo.</p>
+            <form class="space-y-6 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Nome Completo</label>
+                        <input class="w-full bg-transparent border-0 border-b border-stone-200 dark:border-stone-800 focus:ring-0 focus:border-primary px-0 py-3 placeholder-stone-300" placeholder="ex: Alexandre Silva" type="text"/>
+                    </div>
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase tracking-widest font-bold text-stone-400">E-mail</label>
+                        <input class="w-full bg-transparent border-0 border-b border-stone-200 dark:border-stone-800 focus:ring-0 focus:border-primary px-0 py-3 placeholder-stone-300" placeholder="alex@empresa.com" type="email"/>
+                    </div>
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Área de Interesse</label>
+                    <select class="w-full bg-transparent border-0 border-b border-stone-200 dark:border-stone-800 focus:ring-0 focus:border-primary px-0 py-3 appearance-none">
+                        <option>Contencioso Corporativo</option>
+                        <option>Propriedade Intelectual</option>
+                        <option>Gestão de Patrimônio Privado</option>
+                        <option>Fusões e Aquisições (M&A)</option>
+                    </select>
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Mensagem Breve</label>
+                    <textarea class="w-full bg-transparent border-0 border-b border-stone-200 dark:border-stone-800 focus:ring-0 focus:border-primary px-0 py-3 placeholder-stone-300 resize-none" placeholder="Descreva sua situação jurídica..." rows="4"></textarea>
+                </div>
+                <div class="pt-6">
+                    <button class="w-full bg-primary text-stone-950 py-5 font-bold uppercase tracking-[0.2em] hover:bg-stone-950 hover:text-white transition-all">Enviar Solicitação</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="bg-stone-950 text-white pt-24 pb-12 border-t border-stone-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="text-primary">
+                        <svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg font-bold tracking-tight uppercase">Lexington <span class="font-light text-primary">&</span> Associates</h2>
+                </div>
+                <p class="text-stone-500 text-sm leading-relaxed mb-8">
+                    Consultoria jurídica global que oferece representação discreta e de alto nível para os indivíduos e corporações mais exigentes do mundo.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 border border-stone-800 flex items-center justify-center hover:border-primary hover:text-primary transition-all" href="#">
+                        <span class="material-symbols-outlined text-sm">share</span>
+                    </a>
+                    <a class="w-10 h-10 border border-stone-800 flex items-center justify-center hover:border-primary hover:text-primary transition-all" href="#">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-8">Áreas</h5>
+                <ul class="space-y-4 text-sm text-stone-400 font-light">
+                    <li><a class="hover:text-white transition-colors" href="services.html">Consultoria Corporativa</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Ativos Digitais e PI</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Contencioso Privado</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Conformidade Regulatória</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-8">Informações</h5>
+                <ul class="space-y-4 text-sm text-stone-400 font-light">
+                    <li><a class="hover:text-white transition-colors" href="about_us.html">Nossa História</a></li>
+                    <li><a class="hover:text-white transition-colors" href="about_us.html">Sócios</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Insights e Mídia</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Oportunidades de Carreira</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-8">Contato</h5>
+                <ul class="space-y-4 text-sm text-stone-400 font-light">
+                    <li class="flex gap-3">
+                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                        <span>Av. Paulista, 1578<br/>São Paulo, SP 01310-200</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="material-symbols-outlined text-primary text-sm">call</span>
+                        <span>+55 (11) 3255-0198</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-12 border-t border-stone-900 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-[10px] uppercase tracking-widest text-stone-600">© 2024 Lexington & Associates. Todos os direitos reservados.</p>
+            <div class="flex gap-8 text-[10px] uppercase tracking-widest text-stone-600">
+                <a class="hover:text-white" href="#">Política de Privacidade</a>
+                <a class="hover:text-white" href="#">Termos de Uso</a>
+                <a class="hover:text-white" href="#">Aviso Legal</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
